@@ -1,0 +1,894 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    outline: 0
+}
+
+.container {
+    max-width: 1170px
+}
+
+header {
+    width: 100%;
+    height: 81px;
+    background-color: #1d2126
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.nav li {
+    margin: 0 8px
+}
+
+.nav li a {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #a4aead;
+    border: 2px solid rgba(91, 97, 104, 0);
+    border-radius: 5px;
+    padding: 8px 10px;
+    transition: .3s
+}
+
+.nav li a:hover {
+    border: 2px solid #5b6168;
+    transition: .3s
+}
+
+.nav li .active {
+    color: #23b7a4;
+    border-radius: 5px;
+    border: 2px solid #23b7a4 !important
+}
+
+.carousel-indicators {
+    width: 70%;
+    margin: 0 auto;
+    bottom: 30px;
+    justify-content: flex-end
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    opacity: 1;
+    background-color: transparent;
+    background-clip: inherit
+}
+
+.carousel-indicators .active {
+    background-color: #fff
+}
+
+h2 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0
+}
+
+p {
+    color: #8f9193;
+    font-size: 16px
+}
+
+.banner_content {
+    width: 100%;
+    height: 100%;
+    z-index: +1;
+    display: flex;
+    align-items: center
+}
+
+.banner_content p {
+    margin: 25px 0 45px 0;
+    width: 57%
+}
+
+.banner_content button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 122px;
+    height: 42px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    transition: .3s
+}
+
+.banner_content button:first-child {
+    margin-right: 11px
+}
+
+#lovelyWork button:hover, .banner_content button:hover {
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+    transition: .3s
+}
+
+.btnGroup {
+    display: flex;
+    flex-direction: row
+}
+
+.title {
+    margin: 80px 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.title div {
+    margin-right: 14px;
+    width: 10px;
+    height: 35px;
+    background-color: #e1e6ea
+}
+
+.title h2 {
+    color: #000
+}
+
+.description p {
+    margin-bottom: 35px
+}
+
+.description p:nth-child(2) {
+    margin-bottom: 55px
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start
+}
+
+.social a {
+    width: 60px;
+    height: 60px;
+    background-color: #c8cdd0;
+    margin-right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s
+}
+
+.social a:hover {
+    background-color: #d0d5d9;
+    transition: .3s
+}
+
+.social a img {
+    width: 40%;
+    filter: invert(1)
+}
+
+.steps div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+.steps .descStep {
+    display: flex;
+    flex-direction: column
+}
+
+.number {
+    width: 50px;
+    height: 50px;
+    background-color: #23b7a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 20px;
+    color: #fff
+}
+
+h5 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase
+}
+
+.steps p {
+    margin-bottom: 40px
+}
+
+.lines {
+    margin-top: 100px;
+    width: 100%;
+    height: 1px;
+    background-color: #dde1e4
+}
+
+.card {
+    border: none;
+    position: relative;
+    transition: .3s
+}
+
+#meetTheTeam .card, #whatWeDo .card {
+    width: 292px
+}
+
+#features .card, #lovelyWork .card {
+    width: 363px
+}
+
+.card-body {
+    padding: 17px 20px;
+    background-color: #e1e6ea;
+    transition: .3s
+}
+
+.card-body h5 {
+    margin: 0;
+    font-size: 16px
+}
+
+.card-body p {
+    color: #8d8f92;
+    font-size: 14px;
+    transition: .3s
+}
+
+.card:hover .card-body {
+    background-color: #3a454d;
+    color: #fff;
+    transition: .3s
+}
+
+.card:hover .card-body p {
+    color: #fff;
+    transition: .3s
+}
+
+.linkSocial {
+    position: relative;
+    background-image: url(../img/gloria.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.card:nth-child(2) .linkSocial {
+    background-image: url(../img/paul.jpg)
+}
+
+.card:nth-child(3) .linkSocial {
+    background-image: url(../img/judith.jpg)
+}
+
+.card:nth-child(4) .linkSocial {
+    background-image: url(../img/delores.jpg)
+}
+
+.linkSocial a {
+    background-color: #3a454d;
+    z-index: +1;
+    opacity: 0;
+    transition: .3s
+}
+
+#meetTheTeam .linkSocial a:hover {
+    background-color: #4e5a62;
+    transition: .3s
+}
+
+.linkSocial .bg {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: .3s;
+    position: absolute;
+    transition: .3s
+}
+
+#meetTheTeam .card:hover .bg {
+    opacity: .4;
+    transition: .3s;
+    transition: .3s
+}
+
+#meetTheTeam .card:hover .linkSocial a {
+    opacity: 1;
+    transition: .3s
+}
+
+#features, #lovelyWork {
+    background-color: #3a454d
+}
+
+#features .title, #lovelyWork .title {
+    margin: 100px 0 0 0;
+    padding: 80px 0 50px 0
+}
+
+#features .title div, #lovelyWork .title div {
+    background-color: #4e5a62
+}
+
+#features .title h2, #lovelyWork .title h2 {
+    color: #fff
+}
+
+#lovelyWork .card {
+    background-color: transparent;
+    height: 265px
+}
+
+#lovelyWork .card:nth-last-child(-n+3) {
+    margin-top: 30px
+}
+
+#lovelyWork .description {
+    width: 94%
+}
+
+.bg_plus {
+    width: 100%;
+    height: 205px;
+    background-color: rgba(41, 47, 54, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.bg_title {
+    background-color: #292f36;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.bg_title h5 {
+    margin: 0;
+    padding-left: 20px;
+    color: #fff
+}
+
+#lovelyWork .card .description {
+    opacity: 0;
+    transition: .3s
+}
+
+#lovelyWork .card:hover .description {
+    opacity: 1;
+    cursor: pointer;
+    transition: .3s
+}
+
+#lovelyWork button {
+    width: 147px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 60px 0;
+    transition: .3s
+}
+
+#whatWeDo .card img {
+    height: 48px;
+    width: fit-content;
+    margin: 0 auto
+}
+
+#whatWeDo .description {
+    text-align: center
+}
+
+#whatWeDo .card {
+    margin-top: 40px
+}
+
+#whatWeDo .card:nth-last-child(-n+4) {
+    margin-top: 90px
+}
+
+#whatWeDo .description h5 {
+    margin: 35px 0 20px 0
+}
+
+#whatWeDo .description p:nth-child(2) {
+    margin-bottom: 0
+}
+
+#features .card {
+    background-color: transparent;
+    margin-bottom: 110px
+}
+
+#features .card h5 {
+    color: #fff;
+    margin: 44px 0 20px 0
+}
+
+#features .card p {
+    margin: 0;
+    color: #dcdfe1
+}
+
+.map {
+    z-index: -1;
+    top: 93px
+}
+
+#stayInTouch .content {
+    margin-top: 270px
+}
+
+.info {
+    margin-top: 180px
+}
+
+.info h5 {
+    padding-left: 10px;
+    font-size: 20px;
+    margin-bottom: 30px
+}
+
+.info p:nth-child(2) {
+    margin-bottom: 30px
+}
+
+form {
+    background-color: #fff;
+    padding: 30px
+}
+
+form {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 14px;
+    color: #8d8f92;
+    text-transform: uppercase;
+    margin-bottom: 83px
+}
+
+form input {
+    width: 244px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eaeef1;
+    padding-left: 10px
+}
+
+form .message {
+    margin-top: 30px
+}
+
+form textarea {
+    width: 100%;
+    height: 159px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eaeef1;
+    resize: none;
+    padding-left: 10px
+}
+
+form button {
+    margin-top: 30px;
+    width: 151px;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    background-color: #23b7a4;
+    color: #fff;
+    text-transform: uppercase
+}
+
+footer {
+    background-color: #3a454d;
+    height: 95px
+}
+
+footer p {
+    color: #f5f6f6;
+    font-size: 14px
+}
+
+footer .social a {
+    width: 35px;
+    height: 35px;
+    background-color: transparent
+}
+
+footer .social a:hover {
+    background-color: transparent
+}
+
+footer .social a img {
+    width: 52%
+}
+
+.menu-btn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: relative
+}
+
+.menu-btn span, .menu-btn span::after, .menu-btn span::before {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #fff
+}
+
+.menu-btn span::after, .menu-btn span::before {
+    content: '';
+    display: block;
+    transition: .2s
+}
+
+.menu-btn span::before {
+    transform: translateY(-5px)
+}
+
+.menu-btn span::after {
+    transform: translateY(5px)
+}
+
+.menu-btn_active span:before {
+    transform: rotate(-45deg)
+}
+
+.menu-btn_active span {
+    background-color: transparent
+}
+
+.menu-btn_active span:after {
+    transform: rotate(45deg)
+}
+
+.map {
+    overflow: hidden;
+    display: flex;
+    justify-content: center
+}
+
+.map img {
+    width: auto;
+    height: 100%
+}
+
+@media screen and (max-width: 1200px) {
+    .map {
+        height: 250px
+    }
+
+    .info {
+        margin-top: 80px
+    }
+
+    form {
+        margin-bottom: 0
+    }
+
+    form input {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 1171px) {
+    h2 {
+        font-size: 28px
+    }
+
+    p {
+        color: #8f9193;
+        font-size: 14px
+    }
+
+    .banner_content button {
+        width: 102px;
+        height: 32px;
+        font-size: 12px
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 9px;
+        height: 9px
+    }
+
+    .lines {
+        margin-top: 50px
+    }
+}
+
+@media screen and (max-width: 1167px) {
+    .card {
+        margin-top: 10px
+    }
+
+    #lovelyWork .card:nth-last-child(-n+3) {
+        margin-top: 10px
+    }
+
+    #whatWeDo .card:nth-last-child(-n+4) {
+        margin-top: 40px
+    }
+
+    #features .card {
+        margin-bottom: 20px
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        height: 60px
+    }
+
+    header img {
+        width: 80%
+    }
+
+    .nav li {
+        margin: 0 4px
+    }
+
+    .nav li a {
+        font-size: 12px;
+        padding: 4px 5px
+    }
+
+    h2 {
+        font-size: 24px
+    }
+
+    .banner_content p {
+        margin: 15px 0 25px 0
+    }
+
+    h5 {
+        font-size: 16px
+    }
+
+    .title {
+        margin: 40px 0 20px 0
+    }
+
+    #features .title, #lovelyWork .title {
+        margin: 30px 0 0 0;
+        padding: 40px 0 20px 0
+    }
+}
+
+@media screen and (max-width: 875px) {
+    #whatWeDo .description h5 {
+        margin: 25px 0 10px 0
+    }
+
+    #whatWeDo .card {
+        margin-top: 20px
+    }
+
+    .lines {
+        margin-top: 20px
+    }
+
+    .number {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        font-size: 18px
+    }
+
+    .descStep h5 {
+        font-size: 14px
+    }
+
+    .descStep p {
+        font-size: 12px
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 5px 2%;
+        border-bottom-left-radius: 15px;
+        position: absolute;
+        top: 5%;
+        right: 0;
+        z-index: 15;
+        background-color: #1d2126
+    }
+
+    .nav li {
+        text-align: end;
+        margin: 5px 4px
+    }
+
+    .menu-btn {
+        display: block
+    }
+
+    #banner {
+        height: 400px
+    }
+
+    .carousel {
+        height: 100%
+    }
+
+    .banner_content .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .carousel-inner {
+        height: 100%
+    }
+
+    .carousel-item {
+        height: 100%
+    }
+
+    .carousel-item img {
+        width: auto !important;
+        height: 100%
+    }
+
+    .carousel-indicators {
+        justify-content: center
+    }
+
+    h2 {
+        font-size: 20px
+    }
+
+    .banner_content p {
+        width: 80%
+    }
+
+    #lovelyWork button {
+        width: 127px;
+        height: 32px;
+        font-size: 12px;
+        margin: 30px 0
+    }
+
+    #features .card h5 {
+        margin: 24px 0 10px 0
+    }
+
+    .description {
+        width: 90%
+    }
+
+    .description p {
+        margin-bottom: 15px
+    }
+
+    .description p:nth-child(2) {
+        margin-bottom: 25px
+    }
+
+    .social {
+        justify-content: center
+    }
+
+    .steps {
+        width: 100%;
+        display: flex;
+        margin-top: 20px
+    }
+
+    .steps div {
+        justify-content: flex-start
+    }
+
+    .descStep h5 {
+        height: 32px
+    }
+
+    #stayInTouch .content {
+        margin-top: 230px;
+        align-items: center
+    }
+}
+
+@media screen and (max-width: 585px) {
+    #whatWeDo .card {
+        width: 45%
+    }
+
+    #whatWeDo .card:nth-last-child(-n+4) {
+        margin-top: 20px
+    }
+
+    #whatWeDo .description h5 {
+        font-size: 14px;
+        height: 32px
+    }
+
+    #whatWeDo .description p {
+        font-size: 12px
+    }
+
+    footer p {
+        font-size: 12px
+    }
+
+    .steps {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    .content_steps {
+        width: 49%
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h2 {
+        font-size: 19px
+    }
+
+    .content_steps {
+        width: 90%
+    }
+
+    .steps p {
+        margin-bottom: 20px
+    }
+
+    .descStep h5 {
+        height: auto
+    }
+}
+
+@media screen and (max-width: 335px) {
+    footer p {
+        font-size: 11px
+    }
+}
+
+@media screen and (max-height: 760px) {
+    .nav {
+        top: 7%
+    }
+}
